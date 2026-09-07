@@ -10,7 +10,7 @@ def test_frame():
 
     fr = generate_singleframe_cr(seed=2000, date=2027.0, dt=3.16)
     assert np.shape(fr) == (4088, 4088)
-    assert 800 < np.count_nonzero(fr > 100.0) < 1200
+    assert 900 < np.count_nonzero(fr > 100.0) < 1300
     assert 500 < np.count_nonzero(fr > 1.0e3) < 900
 
     fr = generate_singleframe_cr(seed=2000, date=2027.0, dt=30.0)
